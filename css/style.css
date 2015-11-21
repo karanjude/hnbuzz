@@ -1,10 +1,11 @@
 /** Layout Styling **/
 html {
-    background: url(../img/backgrounds/Wood02.jpg) no-repeat center center fixed; 
+    //background: url(../img/backgrounds/Wood02.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color: #e67e22;
 }
 
 body {
