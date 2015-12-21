@@ -1,2 +1,5 @@
-appid=
-version=
+{
+"appid":"",
+"version":"1.2.4",
+"buildVersion":"1"
+}
