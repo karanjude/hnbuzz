@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="166" id="DI3-J1-eSu" customClass="StoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DI3-J1-eSu" id="Ba5-cz-b5m">
+                <rect key="frame" x="0.0" y="0.0" width="334" height="165"/>
+                <autoresizingMask key="autoresizingMask" flexibleMinX="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbe-Vv-UcV">
+                        <rect key="frame" x="17" y="14" width="78" height="51"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWP-dD-hIi">
+                        <rect key="frame" x="17" y="75" width="78" height="51"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSH-by-z5e">
+                        <rect key="frame" x="131" y="15" width="195" height="76"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CommentCount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FU2-1z-dwr">
+                        <rect key="frame" x="131" y="90" width="187" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="Vbe-Vv-UcV" firstAttribute="top" secondItem="Ba5-cz-b5m" secondAttribute="topMargin" constant="10" id="0aT-db-wr0"/>
+                    <constraint firstItem="VSH-by-z5e" firstAttribute="top" secondItem="Ba5-cz-b5m" secondAttribute="topMargin" constant="10" id="1nt-bd-1jK"/>
+                    <constraint firstItem="FU2-1z-dwr" firstAttribute="top" secondItem="Ba5-cz-b5m" secondAttribute="topMargin" constant="5" id="FWZ-DX-VDw"/>
+                    <constraint firstItem="VSH-by-z5e" firstAttribute="leading" secondItem="XWP-dD-hIi" secondAttribute="trailing" constant="10" id="Kuw-e8-nkw"/>
+                    <constraint firstItem="XWP-dD-hIi" firstAttribute="top" secondItem="Vbe-Vv-UcV" secondAttribute="bottom" constant="20" id="i1K-gB-Ksn"/>
+                    <constraint firstItem="Vbe-Vv-UcV" firstAttribute="leading" secondItem="Ba5-cz-b5m" secondAttribute="leadingMargin" constant="20" id="q9t-zR-CJE"/>
+                    <constraint firstItem="XWP-dD-hIi" firstAttribute="leading" secondItem="Ba5-cz-b5m" secondAttribute="leadingMargin" constant="20" id="rR7-Ks-7F4"/>
+                    <constraint firstItem="FU2-1z-dwr" firstAttribute="leading" secondItem="XWP-dD-hIi" secondAttribute="trailing" constant="10" id="spT-JO-got"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="FU2-1z-dwr" secondAttribute="bottom" constant="10" id="xDA-qr-jfk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="byLabel" destination="XWP-dD-hIi" id="0gQ-Rp-zWG"/>
+                <outlet property="commentLabel" destination="FU2-1z-dwr" id="wuY-py-j6v"/>
+                <outlet property="scoreLabel" destination="Vbe-Vv-UcV" id="ED1-il-GyF"/>
+                <outlet property="textLabel" destination="VSH-by-z5e" id="ydz-iV-3Cy"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="318"/>
+        </tableViewCell>
+    </objects>
+</document>

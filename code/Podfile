@@ -1,0 +1,28 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'HackerNews' do
+ pod 'FlatUIKit'
+ pod 'SWTableViewCell', '~> 0.3.7'
+ pod 'SLExpandableTableView'
+ pod 'DSNestedAccordion'
+ pod "RATreeView", "~> 1.0.3"
+ pod 'TTTAttributedLabel'
+ pod 'QBPopupMenu'
+ pod "MMMaterialDesignSpinner"
+ pod 'BButton'
+ pod 'RKSwipeBetweenViewControllers'
+ pod 'AMSlideOutController'
+ pod 'FMDB'
+ pod 'RNBlurModalView', '~> 0.1.0'
+ pod 'LMAlertView'
+ pod 'IQKeyboardManager'
+ pod 'Fabric'
+ pod 'Crashlytics'
+ pod 'Doorbell', '~> 0.0.6'
+end
+
+target 'HackerNewsTests' do
+
+end
+
