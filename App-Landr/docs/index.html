@@ -1,0 +1,279 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation &raquo; App Theme</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;App Theme&rdquo; Documentation by &ldquo;Craig Leontowicz&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;App Theme&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 2013-11-05<br>
+					By: Craig Leontowicz<br>
+					Email: <a href="mailto:craig.leo@gmail.com">craig.leo@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/craigleo">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li>
+				<a href="#html-structure">HTML Structure</a>
+				<ol>
+					<li><a href="#index-page">Index Page (Preview Page)</a></li>
+					<li><a href="#download-page">Download Page</a></li>
+					<li><a href="#footer">Footer</a></li>
+				</ol>
+			</li>
+			<li><a href="#css">CSS Files and Structure</a></li>
+			<li><a href="#javascript">Javascripts</a></li>
+			<li><a href="#mailer">Mailer Options</a> <em class="quiet small">(PHP)</em></li>
+			<li><a href="#psd">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="html-structure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This is a fixed-structure theme with many pre-defined backgrounds. It features a main "preview" page (index.html) a "download" page (download.html) as well as modal dialogs loaded by AJAX for support and about pages. This theme also features a basic slider on both pages which will cycle images. As well, a basic e-mail form backed by PHP is provided in two formats.</p>
+
+		<h4 id="index-page"><strong>A-1) Index Page aka "Preview" Page</strong></h4>
+		<img src="assets/images/index-page.png" width="790" /><br /><br />
+
+		<p>The "preview" page consists of a left and right side. On the left side, we have a mock iPhone with a picture and below it we have the slider controlers.</p>
+		<p>The images on the left side for the slider are contained in <code>body > div#container > <strong>div#iphone-container</strong></code> starting at line 23.</p>
+		
+		<img src="assets/images/index-page-iphone-code.png" width="790" /><br /><br />
+
+		<p>You may add multiple images inside the <code>iphone-container</code> div, the slider will automatically see the images for you and add the slider buttons automatically. Each image is to be <code>203px by 305 px</code> to fit inside the iPhone screen nicely.</p>
+
+		<p>Now, on the right side for this page we have an "info box" with header text, sub-header text and a form for e-mail sign-ups. To modify the text in the "info box" see lines 40-50 in <code>body > div#container > div#info > div#box > <strong>div#inner-box</strong></code>.</p>
+
+		<img src="assets/images/index-page-box-code.png" width="790" /><br /><br />
+
+		<p>The e-mail form posted via AJAX in the background and is linked to <code>mail.php</code>; to configure this script see <a href="#mailer">Mailer Options</a>.</p>
+
+		<h4 id="download-page"><strong>A-2) Download Page</strong></h4>
+		<img src="assets/images/download-page.png" width="790" /><br /><br />
+
+		<p>The "download" page is more-or-less identical to the "preview" page in structure and look. The only difference in the two pages is the "info box" which now contains some pre-defined download images to various app stores</p>
+		<p>You can find these links and images in <code>body > div#container > div#info > div#box > div#inner-box > <strong>div#download-icons</strong></code> between lines 47-52.</p>
+
+		<img src="assets/images/download-page-icons-code.png" width="790" /><br /><br />
+
+		<h4 id="footer"><strong>A-3) Footer</strong></h4>
+
+		<p>As-is, the footer contains three links (privacy, about &amp; support). Each link's <code>href</code> will tell the modal popup what page to load via AJAX, each link must also contain the class "modal" such as; <code>class="modal"</code></p>
+
+		<img src="assets/images/footer.png" width="790" /><br /><br />
+
+		<p>The modal dialog will popup on-click of a link and load the content of the link you specified. It will also size itself vertically to fit the user's browser the best it can and provide a close button. As well, the HTML files you link to can contain any content you wish (HTML, CSS, JS, Youtube, SoundCloud, forms, etc), whatever you need.</p>
+
+		<img src="assets/images/modal.png" width="790" /><br /><br />
+
+		<hr>
+
+		<h3 id="css"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<p>There are two internal CSS files and two external CSS files. The first internal CSS file (<code>css/normalize.css</code>) is a generic reset file to uniform styling across different browsers becase many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p>
+
+		<p>The second internal CSS file is <code>css/style.css</code> which contains the entire styling for all layout, pages and content of this theme. The file is separated into sections such as"</p>
+
+<pre>	/** Layout Styling **/
+
+	some code for general layout things
+
+	/** iPhone Styling **/
+	
+	some code for the iphone styling
+	
+	/** Box Styling **/
+	
+	some code for the outer "info box" styling
+	
+	/** Inner Box Stlying **/
+
+	some code for the inner "info box" styling
+
+	/** E-Mail Form Styling **/
+
+	some code for the email form styling inside "info box"
+
+	/** Slider Styling **/
+
+	some code for the styling of the slider and it's controls
+
+	/** Footer Styling **/
+	
+	some code for the styling of the footer and footer links
+
+	/** Modal Styling **/
+
+	some overriding code for the styling of the modal dialogs
+
+	/** Fading Styling **/
+
+	some code used for all the fade effects on images and links
+	
+	etc, etc. 
+</pre>
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<p>Any links or images with the class <code>fade</code> will produce a fade effect on this theme when the user mouses over the image or link. The opacity and styling can be changed at the bottom of this CSS file:</p>
+
+<pre>
+	a.fade:hover, img.fade:hover {
+   		opacity: 0.7;
+	}
+</pre>
+
+		<p>If you wish to change the background image used to one we have pre-defined, open <code>img/backgrounds</code>. We have 10 pre-defined backgrounds for use; the file <code>Wood02.jpg</code> is the default background currently in use. Pick one you like, then simply open <code>css/stylecss</code> on line 3 you will see:</p>
+<pre>
+    background: url(../img/backgrounds/<strong>Wood02.jpg</strong>) no-repeat center center fixed; 
+</pre>
+
+		<p>Change <code>Wood02.jpg</code> to the background filename of your choice and save the file.</p>
+
+		<p>Now, the two external CSS files are loaded from Google Fonts. One is <strong>Montserrat</strong>; this is the default font used for all content and headers. The second font is <strong>Open Sans Condenced</strong> which is used for the sub-headers, small legal print, etc because of it's thin-base profile letters.</p>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports three Javascript files.</p>
+		
+		<ol>
+			<li>jQuery</li>
+			<li>Theme Scripts</li>
+			<li>Modal jQuery Plugin</li>
+		</ol>
+		  
+		<p>jQuery is a Javascript library that greatly reduces the amount of code that you must write and this is a required file which is loaded by Google's CDN.</p>
+
+		<p>The Theme Script handles all of the iPhone slider animations/functions, modal dialog pop-up options and mail form options.</p>
+		<ul>
+			<li><code>Lines 2-64</code> handles the iPhone slider. There are no options for this slider, but if you are comfortable with jQuery you can modify it to your liking.</li>
+			<li><code>Lines 66-79</code> handles the modal dialog options. If you wish to change these options please refer to the <a href="http://www.ericmmartin.com/projects/simplemodal/" target="_blank">plugin author's website.</a></li>
+			<li><code>Lines 81-88</code> handles the mail form. There are no Javascript options for this mailer unless you are comforable with jQuery you may modify the code.</li>
+		</ul>
+		
+		<hr>
+
+		<h3 id="mailer"><strong>D) Mailer Options</strong> - <a href="#toc">top</a></h3>
+
+		<hr>
+
+		<p>The mailer script (mail.php) has two mailing options.</p>
+
+		<p>Option one is with the use of <a href="http://swiftmailer.org/" target="_blank">Swiftmailer</a>. Swiftmailer is a powerful mailing library for PHP which can use a SMTP server and credentials to send out e-mails. This is the recommended way by this theme to send the form data because it ensures a proper delivery that shouldn't end up in your junk folder.</p>
+
+		<p>Option two is with the use of PHP's mail() function. This is a very basic function that works on most hosting providers but it is subject to your host's preferences; meaning e-mails are not guaranteed to be delievered and may be delivered off-time.</p>
+
+		<p>The default is Swiftmailer. To use PHP's mail() function see line 11 of mail.php</p>
+		<pre>
+$mailer_option = 'swiftmailer'; // or 'php-mailer'
+		</pre>
+		<p>Simply change the word <code>swiftmailer</code> to <code>php-mailer</code>. Please refer to the below sections depending on which option you picked.</p>
+
+		<h4>Option One: Swiftmailer Setup</h4>
+		<p>You will need your SMTP host, username, password and port. If you do not know these, its best to contact your hosting provider and get the information. If you know the information edit lines <code>14-20</code>
+
+		<pre>
+    $smtp_host = 'mail.yourdomain.com'; // Your SMTP host domain
+    $smtp_port = 25; // Your SMTP host port
+    $smtp_user = 'you@yourdomain.com'; // Your e-mail account to send from
+    $smtp_pass = 'your-password'; // Your e-mail account password to send from
+
+    $to_email  = 'send-to@me.com'; // The e-mail to send the message to.
+    $website   = '[Website]'; // Your website's name
+		</pre>
+
+		<p>Simply replace the values above with the correct information then refer to line <code>46</code></p>
+
+		<pre>
+$message_to_user = 'Thank you for signing up!';
+		</pre>
+
+		<p>This is the message the user will see pop-up after using the form. Simply replace it with any message you wish and save the file. You're done!</p>
+
+		<h4>Option Two: PHP mail() Setup</h4>
+		<p>Simple refer to lines <code>40-41</code> and set the e-mail address you wish to receive the e-mail at and your website's name.</p>
+
+		<pre>
+    $to_email  = 'send-to@me.com'; // The e-mail to send the message to.
+    $website   = '[Website]'; // Your website's name
+		</pre>
+
+		<p>Replace the values with what you wish to use. When this is complete then refer to line <code>42</code></p>
+
+		<pre>
+$message_to_user = 'Thank you for signing up!';
+		</pre>
+
+		<p>This is the message the user will see pop-up after using the form. Simply replace it with any message you wish and save the file. Save the file and you're done!</p>
+
+		<h3 id="psd"><strong>E) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've included one layed PSD for this theme:</p>
+		
+			<ol>
+				<li>psd/theme.psd</li>
+			</ol>
+		
+		<p>All images, layouts (preview page, download page, etc), buttons and icons are located in this one layed PSD.</p>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons or other files as listed.
+		
+		<ul>
+			<li>Background Images &raquo; BoomBoomPixel.com</li>
+			<li>App Store Icons &raquo; Respective Companies (Apple, Blackberry, Android, Microsoft)</li>
+			<li>iPhone Mockup &raquo; <a href="http://www.pixeden.com/psd-mock-up-templates/iphone-5-psd-vector-mockup">Pixeden.com</a></li>
+			<li>All other media is subject to myself, Craig Leontowicz</li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Craig Leontowicz</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "30652D266ACE1BAC4DF8680DE81B9092E22F0D54" : 0,
+    "3C849D3D66884C904C521A9524E383567909CAFE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2A2551CD-A23B-466F-924F-8E1E9CF1AC18",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "30652D266ACE1BAC4DF8680DE81B9092E22F0D54" : "trial\/ExpandableRows\/",
+    "3C849D3D66884C904C521A9524E383567909CAFE" : "trial\/RATreeView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HackerNews",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HackerNews.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gasparenovara\/ExpandableRows.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30652D266ACE1BAC4DF8680DE81B9092E22F0D54"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Augustyniak\/RATreeView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3C849D3D66884C904C521A9524E383567909CAFE"
+    }
+  ]
+}
