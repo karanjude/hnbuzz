@@ -1,5 +1,5 @@
 {
 "appid":"",
 "version":"1.2.7",
-"buildVersion":"3"
+"buildVersion":"4"
 }
